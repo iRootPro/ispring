@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ispring/static/css/main.9c82925f.chunk.css",
+    "main.js": "/ispring/static/js/main.bce42770.chunk.js",
+    "main.js.map": "/ispring/static/js/main.bce42770.chunk.js.map",
+    "runtime-main.js": "/ispring/static/js/runtime-main.a442d347.js",
+    "runtime-main.js.map": "/ispring/static/js/runtime-main.a442d347.js.map",
+    "static/js/2.fae2a2ed.chunk.js": "/ispring/static/js/2.fae2a2ed.chunk.js",
+    "static/js/2.fae2a2ed.chunk.js.map": "/ispring/static/js/2.fae2a2ed.chunk.js.map",
+    "static/js/3.003e7a6c.chunk.js": "/ispring/static/js/3.003e7a6c.chunk.js",
+    "static/js/3.003e7a6c.chunk.js.map": "/ispring/static/js/3.003e7a6c.chunk.js.map",
+    "index.html": "/ispring/index.html",
+    "static/css/main.9c82925f.chunk.css.map": "/ispring/static/css/main.9c82925f.chunk.css.map",
+    "static/js/2.fae2a2ed.chunk.js.LICENSE.txt": "/ispring/static/js/2.fae2a2ed.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a442d347.js",
+    "static/js/2.fae2a2ed.chunk.js",
+    "static/css/main.9c82925f.chunk.css",
+    "static/js/main.bce42770.chunk.js"
+  ]
+}
