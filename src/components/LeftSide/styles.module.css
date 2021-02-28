@@ -1,0 +1,9 @@
+.leftSide {
+    background-color: #a4a4a4;
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

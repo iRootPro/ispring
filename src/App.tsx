@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LeftSide from "./components/LeftSide";
+import RightSide from "./components/RigthSide";
+import styles from './style.module.css'
+import {useDispatch, useSelector} from "react-redux";
+import {loadState} from "./helpers/localStorage";
+import {restoreStateLocalStorage} from "./reducers/draw-reducer";
+import {RootStateType} from "./app/store";
+import { setInitApp } from './reducers/app-reducer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const ctx = useSelector<RootStateType>(state => state.draw.ctx)
+    const isInit = useSelector<RootStateType, boolean>(state => state.app.isInit)
+    const dispatch = useDispatch()
+    if (ctx && !isInit) {
+        const savedState = loadState()
+        if (savedState) {
+            dispatch(restoreStateLocalStorage(savedState))
+        }
+        dispatch(setInitApp())
+    }
+
+    return (
+        <section className={styles.container}>
+            <LeftSide/>
+            <RightSide/>
+        </section>
+    );
 }
 
 export default App;
